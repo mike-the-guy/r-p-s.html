@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/resturant.css">
+  <title>Resturant Bill</title>
+</head>
+<body>
+  <div>
+    <button onclick="console.log(`soup: $${soupCost}`);">
+      Soup
+    </button>
+
+    <button onclick="soupCost = (`${4.5 + 4.5}`);
+      console.log(`soup: $${soupCost}`)" >
+        +1
+    </button>
+  
+    <button onclick="soupCost *= 2;
+     console.log(`soup: $${soupCost}`)">
+      For two
+    </button>
+  
+    <button onclick="soupCost *= 3;
+    console.log(`soup: $${soupCost}`)">
+      For three 
+    </button>
+
+    <button onclick="
+      console.log('order was reset')
+        soupCost = 0;
+      console.log(`soupCost: ${soupCost}`)">
+        Reset Cart
+  </button>
+  </div>
+
+<div class="bagelSection">
+  <button class="bagel2" onclick="console.log(`Bagel: $${bagelCost}`)">
+    Bagel
+  </button>
+
+  <button onclick="bagelCost = (`${1.5 + 1.5}`);
+    console.log(`bagel: $${bagelCost}`)" >
+      +1
+  </button>
+
+  <button onclick="bagelCost *= 2;
+  console.log(`soup: $${bagelCost}`)">
+   For two
+  </button> 
+
+  <button onclick="bagelCost *= 3;
+  console.log(`bagel: $${bagelCost}`)">
+    For three 
+  </button>
+
+  <button onclick="
+  console.log('order was reset')
+    bagelCost = 0;
+  console.log(`bagelCost: ${bagelCost}`)">
+    Reset Cart
+</button>
+</div>
+  <button class="totalOrder"
+  onclick="console.log(`total cost: $${soupCost + bagelCost + coffeeCost}`)">
+    total Cost
+  </button>  
+
+  <script>
+    let soupCost = 0;
+
+    let bagelCost = 0;
+    
+    let coffeeCost = 0;
+  </script>
+</body>
+</html>
